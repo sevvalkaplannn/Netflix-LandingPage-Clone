@@ -1,0 +1,762 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 56px;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+header a.logo {
+  display: block;
+}
+
+header .logo svg {
+  fill: #e50914;
+  height: 37px;
+}
+
+header div + div {
+  text-align: right;
+}
+header a.button {
+  display: inline-block;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  padding: 7px 17px;
+  border-radius: 3px;
+}
+
+header select {
+  background: transparent;
+  color: #fff;
+  background-color: #000;
+  padding: 6px 0 6px 20px;
+  border-radius: 3px;
+}
+
+header div.select {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+header div.select svg {
+  height: 20px;
+  fill: #fff;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+div.splash {
+  position: relative;
+}
+div.splash div.gradient {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  position: absolute;
+  inset: 0;
+}
+div.splash div.background img {
+  max-width: 100%;
+  opacity: 0.6;
+}
+
+div.splash div.content {
+  max-width: 750px;
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  margin-left: -407.5px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+div.splash h1,
+div.splash h2,
+div.splash h3 {
+  font-weight: normal;
+}
+
+div.splash h1 {
+  font-size: 3.325rem;
+  font-weight: bold;
+}
+
+div.splash h2 {
+  font-size: 1.825rem;
+  margin-top: 13px;
+  margin-bottom: 29px;
+}
+
+div.splash h3 {
+  font-size: 1.1rem;
+  max-width: 900px;
+  width: 800px;
+  padding-bottom: 20px;
+}
+
+div.cta form {
+  position: relative;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr max-content; /*input alabilceği en büyük alanı alıyo buton en küçüğü alıyor*/
+}
+
+div.cta input {
+  padding: 19px 10px;
+  margin-left: 109px;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+div.cta input ~ span {
+  position: absolute;
+  left: 119px;
+  top: 22px;
+  z-index: 3;
+  color: rgb(170, 170, 170);
+  transition: all 0.15s ease;
+  pointer-events: none;
+}
+div.cta input:focus {
+  padding-top: 19px;
+  padding-bottom: 11px;
+}
+
+div.cta input:focus ~ span {
+  top: 4px;
+  font-size: 0.8rem;
+}
+
+div.cta button {
+  font-size: 1.625rem;
+  padding: 17.6px 26px;
+  margin-right: 75px;
+  background-color: #e50914;
+  color: #fff;
+  border: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 46px;
+  padding: 70px 150px;
+  align-items: center;
+  border-top: 5px solid #222;
+}
+
+section.last {
+  border-bottom: 8px solid #222;
+}
+
+section div.texts h1 {
+  font-size: 3.125rem;
+  margin-bottom: 8px;
+}
+
+section div.texts p {
+  font-size: 1.625rem;
+}
+
+.media {
+  position: relative;
+}
+
+.media.s1 img {
+  width: 400px;
+}
+
+.media.s1 video {
+  width: 293px;
+  position: absolute;
+  top: 62px;
+  left: 52px;
+}
+
+@media screen and (min-width: 949px) {
+  section:nth-child(even) div.texts {
+    order: 2;
+  }
+}
+
+section div.download {
+  border: 2px solid #666;
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 20px;
+  height: 115px;
+  display: grid;
+  color: #0071eb;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  width: 300px;
+  left: 41%;
+  margin-left: -160px;
+  background-color: #000;
+  gap: 15px;
+  grid-template-columns: max-content 1fr max-content;
+}
+
+.birincifoto {
+  width: 80%;
+}
+
+section div.download img.cover {
+  margin-top: -10px;
+  height: 75px;
+  width: auto;
+}
+
+section div.download img.yüklemegifi {
+  margin-top: -10px;
+  height: 65px;
+  width: auto;
+}
+
+.media.s3 img {
+  width: 400px;
+  position: relative;
+  z-index: 5;
+}
+
+.media.s3 video {
+  width: 250px;
+  position: absolute;
+  top: 36px;
+  left: 72px;
+}
+
+div.faq {
+  padding: 70px 30px;
+}
+div.faq h1 {
+  font-size: 3.125rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+div.questions {
+  max-width: 635px;
+  margin: 0 auto;
+  font-size: 1.625rem;
+}
+
+div.question {
+  position: relative;
+  background-color: #303030;
+  margin-bottom: 10px;
+}
+
+div.question svg {
+  width: 30px;
+  height: 30px;
+  right: 30px;
+  top: 20px;
+  position: absolute;
+  transform: rotate(45deg);
+  transition: all 0.2s ease;
+}
+
+div.question .header {
+  display: block;
+  padding: 20px 30px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+div.question div.answer {
+  padding: 0 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+div.question input[type="checkbox"] {
+  display: none;
+}
+div.question input[type="checkbox"]:checked ~ div.answer {
+  padding: 30px 30px;
+  max-height: 600px;
+}
+
+div.question input[type="checkbox"]:checked ~ .header svg {
+  transform: rotate(180deg);
+}
+
+div.faq h3 {
+  font-weight: normal;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+div.faq form {
+  max-width: 635px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-bottom: 1.5rem;
+  color: #757575;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  padding-left: 50%;
+  width: 14.375rem;
+  height: 2.2rem;
+}
+
+a {
+  color: #757575;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.bunaözel {
+  margin-left: 330px;
+  margin-bottom: 1.5rem;
+  color: #757575;
+}
+
+.footer-columns {
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  width: 60%;
+  left: 90px;
+  padding-left: 13.55rem;
+  padding-top: 1rem;
+}
+
+.footer li:hover {
+  text-decoration: underline;
+}
+
+footer select {
+  background: transparent;
+  color: #757575;
+  padding: 18px 0px 18px 40px;
+  border-radius: 5px;
+}
+
+footer div.select {
+  margin-top: 2%;
+  display: inline-block;
+  margin-left: 350px;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  color: #757575;
+  font-size: 32px;
+}
+
+footer div.select svg {
+  height: 25px;
+  fill: #757575;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 7px;
+}
+
+.son {
+  margin-left: 330px;
+  margin-top: 2%;
+  margin-bottom: 1.5rem;
+  color: #757575;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.yazı {
+  position: absolute;
+  top: 27%;
+  left: 27%;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.sonbuton form {
+  position: relative;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr max-content; /*input alabilceği en büyük alanı alıyo buton en küçüğü alıyor*/
+}
+
+div.sonbuton input {
+  padding: 19px 10px;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+div.sonbuton input ~ span {
+  position: absolute;
+  left: 29px;
+  top: 22px;
+  z-index: 3;
+  color: rgb(170, 170, 170);
+  transition: all 0.15s ease;
+  pointer-events: none;
+}
+div.sonbuton input:focus {
+  padding-top: 19px;
+  padding-bottom: 11px;
+}
+
+div.sonbuton input:focus ~ span {
+  top: 4px;
+  font-size: 0.8rem;
+}
+
+div.sonbuton button {
+  font-size: 1.625rem;
+  padding: 17.2px 26px;
+  margin-right: 25px;
+  background-color: #e50914;
+  color: #fff;
+  border: 0;
+}
+
+@media screen and (max-width: 949px) {
+  div.splash div.content {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    max-width: 750px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  div.splash div.background {
+    position: absolute;
+    z-index: 1;
+  }
+
+  div.splash h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  div.splash h2 {
+    font-size: 20px;
+  }
+
+  div.splash h3 {
+    font-size: 12px;
+  }
+
+  header .logo svg {
+    fill: #e50914;
+    height: 27px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    padding: 26px 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+  }
+
+  header div.select {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  div.cta form {
+    position: relative;
+    display: block;
+    margin: 20px 20px 0;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  div.cta input {
+    padding: 5px 5px;
+    margin-left: -20px;
+    font-size: 1.2rem;
+    width: 40%;
+  }
+
+  div.cta input ~ span {
+    position: absolute;
+    left: 220px;
+    top: 10px;
+    z-index: 3;
+    color: rgb(170, 170, 170);
+    transition: all 0.15s ease;
+    font-size: 12px;
+    pointer-events: none;
+  }
+  div.cta input:focus {
+    padding-top: 19px;
+    padding-bottom: 11px;
+  }
+
+  div.cta input:focus ~ span {
+    top: 4px;
+    font-size: 0.5rem;
+  }
+  div.cta button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-top: 5px;
+    margin-right: 35px;
+    border-radius: 2px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 46px;
+    padding: 70px 150px;
+    align-items: center;
+    border-top: 5px solid #222;
+    text-align: center;
+  }
+
+  section.last {
+    border-bottom: 8px solid #222;
+  }
+
+  section div.texts h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  section div.texts p {
+    font-size: 15px;
+  }
+
+  .media {
+    position: relative;
+  }
+
+  .media.s1 img {
+    width: 300px;
+  }
+
+  .media.s1 video {
+    width: 60%;
+    position: absolute;
+    top: 46px;
+    left: 70px;
+    margin-left: -2px;
+  }
+
+  .media.s3 img {
+    width: 300px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .media.s3 video {
+    width: 50%;
+    position: absolute;
+    top: 36px;
+    left: 87px;
+  }
+
+  .media.s4 img {
+    width: 300px;
+    position: relative;
+  }
+
+  div.faq h1 {
+    font-size: 1.625rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  div.questions {
+    max-width: 635px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  div.faq form {
+    max-width: 635px;
+    margin: 0 auto;
+  }
+
+  div.faq form div + div {
+    text-align: center;
+  }
+
+  section div.download {
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 20px;
+    height: 80px;
+    display: grid;
+    color: #0071eb;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    width: 200px;
+    left: 68%;
+    margin-left: -160px;
+    background-color: #000;
+    gap: 15px;
+    grid-template-columns: max-content 1fr max-content;
+  }
+
+  .birincifoto {
+    width: 100%;
+  }
+
+  section div.download img.cover {
+    margin-top: -10px;
+    height: 35px;
+    margin-left: 5px;
+    width: auto;
+  }
+
+  section div.download img.yüklemegifi {
+    margin-top: -10px;
+    height: 45px;
+    width: auto;
+  }
+
+  .yazı {
+    position: absolute;
+    top: 24%;
+    left: 27%;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  div.sonbuton form {
+    position: relative;
+    display: block;
+    margin: 20px 20px 0;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  div.sonbuton input {
+    padding: 5px 5px;
+    margin-left: 140px;
+    font-size: 1.2rem;
+    width: 40%;
+  }
+
+  div.sonbuton input ~ span {
+    position: absolute;
+    left: 145px;
+    top: 10px;
+    z-index: 3;
+    color: rgb(170, 170, 170);
+    transition: all 0.15s ease;
+    font-size: 12px;
+    pointer-events: none;
+  }
+
+  div.sonbuton input:focus {
+    padding-top: 19px;
+    padding-bottom: 11px;
+  }
+
+  div.sonbuton input:focus ~ span {
+    top: 4px;
+    font-size: 0.5rem;
+  }
+
+  div.sonbuton button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-top: 5px;
+    margin-right: 35px;
+    border-radius: 2px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+  }
+
+  .bunaözel {
+    margin-left: 100px;
+    margin-bottom: 1.5rem;
+    color: #757575;
+  }
+
+  .footer-columns {
+    display: flex;
+    grid-template-columns: auto;
+    width: 0;
+    left: 0;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  .footer li:hover {
+    text-decoration: underline;
+  }
+
+  footer select {
+    background: transparent;
+    color: #757575;
+    padding: 18px 0px 18px 40px;
+    border-radius: 5px;
+  }
+
+  footer div.select {
+    margin-top: 2%;
+    display: inline-block;
+    margin-left: 55px;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    color: #757575;
+    font-size: 32px;
+  }
+
+  footer div.select svg {
+    height: 25px;
+    fill: #757575;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 7px;
+  }
+
+  .son {
+    margin-left: 55px;
+    margin-top: 2%;
+    margin-bottom: 1.5rem;
+    color: #757575;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  li {
+    padding-left: 12%;
+    width: 9rem;
+    height: 2.2rem;
+  }
+}
